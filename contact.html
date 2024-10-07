@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Author: Gaston Duflos -->
+    <!-- Student ID: 987555 -->
+    <!-- Date: 07-October-2024 -->
+    <!-- Project and purpose: Assessment 2: Web Develoment ICT114 --> 
+     
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Gaston World Ph</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.original.html" class="home-link">
+                <h1>Gaston World Ph</h1>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.original.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Portfolio</a>
+                        <div class="dropdown-content">
+                            <a href="project1.html">Sydney Photos</a>
+                            <a href="project2.html">Tokyo Photos</a>
+                            <a href="project3.html">Roma Photos</a>
+                            <a href="project4.html">Buenos Aires Photos</a>
+                            <a href="project5.html">Paris Photos</a>
+                        </div>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="contact-form">
+                <h2>Contact Me</h2>
+                <form id="contactForm" action="/maillist.php" method="POST">
+                    <div id="errorMessages" style="color: red;"></div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <input type="submit" value="Send Message">
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Gaston Duflos. Student Id: 987555. Assestment 2. ICT114. Web Development.</p>
+            &nbsp;
+            <p>The photos on this website are for assessment and web development practice only.</p>
+            <p>The photos are not owned by the student and were downloaded from Pexels.com as free copyright images.</p>
+        </div>
+    </footer>
+
+    <script src="js/contact-form-validation.js"></script>
+</body>
+</html>
